@@ -1,0 +1,146 @@
+[
+  {
+    "code": "2MCA001",
+    "date": "2026-10-03",
+    "heure": "18:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "UNION SPORTIVE CARRIERES SUR SEINE",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "2MCA010",
+    "date": "2026-10-10",
+    "heure": "18:30",
+    "domicile": "LSO COLOMBES 1",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE AMBROISE PARÉ"
+  },
+  {
+    "code": "2MCA012",
+    "date": "2026-10-24",
+    "heure": "18:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "BUSSY VOLLEY",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "2MCA019",
+    "date": "2026-11-08",
+    "heure": "16:00",
+    "domicile": "ANTONY VOLLEY 2",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE PAJEAUD"
+  },
+  {
+    "code": "2MCA023",
+    "date": "2026-11-21",
+    "heure": "18:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "AS. SP DE SARTROUVILLE 3",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "2MCA028",
+    "date": "2026-11-28",
+    "heure": "21:00",
+    "domicile": "US FONTENAYSIENNE",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "COLETTE BESSON"
+  },
+  {
+    "code": "2MCA034",
+    "date": "2026-12-05",
+    "heure": "18:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "FS VAL D'EUROPE ESBLY COUPVRAY VB 2",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "2MCA037",
+    "date": "2026-12-20",
+    "heure": "15:00",
+    "domicile": "LEVALLOIS SPORTING CLUB 1",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "MARIE-CLAIRE RESTOUX"
+  },
+  {
+    "code": "2MCA045",
+    "date": "2027-01-09",
+    "heure": "18:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "CLUB OMNISPORTS DE COURCOURONNES -SECTION VB 1",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "2MCR046",
+    "date": "2027-01-16",
+    "heure": "18:30",
+    "domicile": "UNION SPORTIVE CARRIERES SUR SEINE",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE DES ALOUETTES"
+  },
+  {
+    "code": "2MCR055",
+    "date": "2027-01-30",
+    "heure": "18:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "LSO COLOMBES 1",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "2MCR057",
+    "date": "2027-02-20",
+    "heure": "19:00",
+    "domicile": "BUSSY VOLLEY",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "COMPLEXE SPORTIF HERZOG"
+  },
+  {
+    "code": "2MCR064",
+    "date": "2027-02-27",
+    "heure": "18:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "ANTONY VOLLEY 2",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "2MCR068",
+    "date": "2027-03-06",
+    "heure": "19:00",
+    "domicile": "AS. SP DE SARTROUVILLE 3",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE CARNOT"
+  },
+  {
+    "code": "2MCR073",
+    "date": "2027-03-20",
+    "heure": "18:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "US FONTENAYSIENNE",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "2MCR079",
+    "date": "2027-04-04",
+    "heure": "14:00",
+    "domicile": "FS VAL D'EUROPE ESBLY COUPVRAY VB 2",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE DAVID DOUILLET"
+  },
+  {
+    "code": "2MCR082",
+    "date": "2027-04-17",
+    "heure": "18:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "LEVALLOIS SPORTING CLUB 1",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "2MCR090",
+    "date": "2027-04-25",
+    "heure": "13:00",
+    "domicile": "CLUB OMNISPORTS DE COURCOURONNES -SECTION VB 1",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE COLETTE BESSON"
+  }
+]

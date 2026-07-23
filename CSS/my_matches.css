@@ -1,0 +1,41 @@
+
+body {
+    display : grid;
+    grid-template-areas : "header"
+                          "content"
+                          "footer";
+    grid-template-rows : 5fr 10fr 5fr 
+}
+
+
+.matches_area{
+
+    margin : 0 4rem 0 4rem;
+    padding : 2rem;
+
+    grid-area : content;
+    border : solid black ;
+    border-radius : 20px ;
+
+    text-align: center;
+
+    display : flex;
+    flex-direction : column ;
+}
+
+.matches_list {
+    display : flex;
+    gap : 2rem;
+}
+
+.match_container {
+
+    padding : 2rem;
+    color: blue;
+
+    border : solid grey ;
+    border-radius : 20px ;
+
+    width : fit-content
+
+}
