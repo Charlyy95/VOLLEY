@@ -34,7 +34,7 @@ jobs:
 
       # 4. Lance le scraper (écrit/écrase matches_cache.json)
       - name: Lancer le scraper
-        run: python ffvolley_scraper.py
+        run: python scraper.py
 
       # 5. Commit et push le JSON mis à jour, seulement s'il a changé
       - name: Committer les données mises à jour
