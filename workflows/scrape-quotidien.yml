@@ -1,0 +1,46 @@
+name: Mise à jour du calendrier
+
+# --- Déclencheurs ---
+on:
+  schedule:
+    # Tous les jours à 6h00 UTC (= 8h00 heure de Paris en été, 7h00 en hiver)
+    - cron: "0 12 39 * *"
+  # Permet aussi de le lancer manuellement depuis l'onglet "Actions" sur GitHub,
+  # très utile pour tester sans attendre le lendemain.
+  workflow_dispatch:
+
+# Autorise ce workflow à écrire dans le dépôt (nécessaire pour committer le JSON)
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest   # une machine Linux fraîche, fournie par GitHub
+
+    steps:
+      # 1. Récupère le code de ton dépôt sur la machine virtuelle
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      # 2. Installe Python sur cette machine
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. Installe les dépendances du scraper
+      - name: Installer les dépendances
+        run: pip install requests beautifulsoup4
+
+      # 4. Lance le scraper (écrit/écrase matches_cache.json)
+      - name: Lancer le scraper
+        run: python ffvolley_scraper.py
+
+      # 5. Commit et push le JSON mis à jour, seulement s'il a changé
+      - name: Committer les données mises à jour
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matches_cache.json
+          git diff --staged --quiet || git commit -m "Mise à jour automatique du calendrier"
+          git push

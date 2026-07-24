@@ -16,7 +16,7 @@ PARAMS = {
 
 }
 
-MATCHES_FILE = Path("matchs.json")
+MATCHES_FILE = Path("matches.json")
 
 def scrap_matches (params = PARAMS):
 
