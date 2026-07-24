@@ -1,9 +1,18 @@
 :root {
-    --bg_color : rgb(90, 31, 31);
-    --main_color : rgb(226, 204, 161);
+    --title      : #80586D;
+    --bg_color   : #C49D83;
+    --main_color : #9E8277;
+    --text       : #A76844;
+    --border     : #9F5540;
 
 }
 
 body{
-    background-color: var(--main_color)
+    background-color: var(--bg_color);
+    font-family : "boring"
+}
+
+@font-face {
+  font-family: "boring";
+  src: url("../Boring Time.otf");
 }

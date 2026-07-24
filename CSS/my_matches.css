@@ -14,7 +14,7 @@ body {
     padding : 2rem;
 
     grid-area : content;
-    border : solid black ;
+    border : solid var(--border) ;
     border-radius : 20px ;
 
     text-align: center;
@@ -24,18 +24,45 @@ body {
 }
 
 .matches_list {
-    display : flex;
-    gap : 2rem;
+    display : grid;
+    grid-template-columns : repeat(2, 1fr);
+    gap: 1rem;
+    place-items : center;
+
 }
 
 .match_container {
 
     padding : 2rem;
-    color: blue;
+    display : flex;
+    flex-direction : column;
+    color: var(--text);
+    max-width: 15rem;
 
-    border : solid grey ;
+    border : solid var(--border) ;
     border-radius : 20px ;
 
     width : fit-content
 
+}
+
+.detail_match {
+    display : flex;
+    flex-direction : column ;
+    gap : 0.5rem;
+}
+
+.params{
+    display : flex;
+    gap : 1rem;
+    background : var(--main_color);
+    border-radius: 15px;
+    padding : 0.2rem;
+
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
