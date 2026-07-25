@@ -4,17 +4,24 @@ body {
     grid-template-areas : "header"
                           "content"
                           "footer";
-    grid-template-rows : 5fr 10fr 5fr 
+    grid-template-rows : auto 10fr auto ; 
 }
 
-
+.subtitle{
+    padding : 0.5rem;
+    margin : 3rem 10rem 3rem 10rem;
+    background : var(--vignette) ; 
+    border-radius : 20px;
+    border : solid 0.3rem var(--border);
+}
 .matches_area{
 
     margin : 0 4rem 0 4rem;
     padding : 2rem;
 
     grid-area : content;
-    border : solid var(--border) ;
+    border : solid 0.3rem var(--border);
+    background : var(--bg_color);
     border-radius : 20px ;
 
     text-align: center;
@@ -36,10 +43,11 @@ body {
     padding : 2rem;
     display : flex;
     flex-direction : column;
+    background : var(--vignette);
     color: var(--text);
     max-width: 15rem;
 
-    border : solid var(--border) ;
+    border : solid 0.2rem var(--border) ;
     border-radius : 20px ;
 
     width : fit-content
@@ -49,20 +57,22 @@ body {
 .detail_match {
     display : flex;
     flex-direction : column ;
+    justify-content : center ;
     gap : 0.5rem;
 }
 
 .params{
     display : flex;
+    
+    align-items : center ;
     gap : 1rem;
     background : var(--main_color);
     border-radius: 15px;
-    padding : 0.2rem;
+    padding : 0.4rem;
 
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
+    width: 2rem ;
     object-fit: contain;
 }

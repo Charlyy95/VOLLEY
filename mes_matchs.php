@@ -13,12 +13,28 @@
 </head>
 
 <body>
+
+    <div class="selection">
+        <div>
+            <input type ="radio" name="team" value="REG"></input>
+            <label for="REG">REG</label>
+        </div>
+        <div>
+            <input type ="radio" name="team" value="DEP"></input>
+            <label for="DEP">DEP</label>
+        </div>
+    </div>
+
     <div class="matches_area">
-        <h2> MES MATCHS </h2>
+        <h2 class="subtitle"> MES MATCHS </h2>
 
         <div class="matches_list">
 
         <?php 
+        if ($matches == []){ ?>
+            <div> Aucun match renseigné pour cette équipe</div>
+        <?php exit();}
+
         $count = 0; 
         foreach ($matches as $match): ?>
             

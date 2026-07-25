@@ -1,15 +1,17 @@
 :root {
-    --title      : #80586D;
-    --bg_color   : #C49D83;
-    --main_color : #9E8277;
-    --text       : #A76844;
-    --border     : #9F5540;
+    --title      : #3B556D;
+    --vignette   : #F5F0D7;
+    --bg_color   : #007198;
+    --main_color : #5FC2BA;
+    --text       : #0B162C;
+    --border     : #1C2942;
 
 }
 
 body{
-    background-color: var(--bg_color);
-    font-family : "boring"
+    background-color: white;
+    font-family : "boring" ; 
+    font-size: 120%;
 }
 
 @font-face {
