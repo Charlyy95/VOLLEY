@@ -1,6 +1,7 @@
 :root {
     --title      : #3B556D;
     --vignette   : #F5F0D7;
+    --shadow     : rgba(0,0,0,0.7);
     --bg_color   : #007198;
     --main_color : #5FC2BA;
     --text       : #0B162C;

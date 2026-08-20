@@ -12,7 +12,7 @@ body {
     margin : 3rem 10rem 3rem 10rem;
     background : var(--vignette) ; 
     border-radius : 20px;
-    border : solid 0.3rem var(--border);
+    box-shadow : 0 1rem 3rem var(--shadow);
 }
 .matches_area{
 
@@ -20,9 +20,9 @@ body {
     padding : 2rem;
 
     grid-area : content;
-    border : solid 0.3rem var(--border);
+    box-shadow : 0 0 3rem var(--shadow);
     background : var(--bg_color);
-    border-radius : 20px ;
+    border-radius : 5rem ;
 
     text-align: center;
 
@@ -47,8 +47,9 @@ body {
     color: var(--text);
     max-width: 15rem;
 
-    border : solid 0.2rem var(--border) ;
     border-radius : 20px ;
+    box-shadow : 2rem 2rem 2rem var(--shadow);
+    
 
     width : fit-content
 

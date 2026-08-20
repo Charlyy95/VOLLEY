@@ -7,6 +7,7 @@
     <title>Mes matchs</title>
     <link href="CSS/my_matches.css" rel="stylesheet">
     <link href="CSS/root.css" rel="stylesheet">
+    <script src="team_choice.js" defer></script>
 
     <!--<link rel="icon" href="img/logo.png">      icone dans l'onglet du navigateur-->
 
@@ -16,11 +17,11 @@
 
     <div class="selection">
         <div>
-            <input type ="radio" name="team" value="REG"></input>
+            <input type ="radio" name="team" id="REG" value="REG">
             <label for="REG">REG</label>
         </div>
         <div>
-            <input type ="radio" name="team" value="DEP"></input>
+            <input type ="radio" name="team" id="DEP" value="DEP">
             <label for="DEP">DEP</label>
         </div>
     </div>
