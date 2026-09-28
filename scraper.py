@@ -9,20 +9,39 @@ BASE_URL = "https://www.ffvbbeach.org/ffvbapp/resu/vbspo_calendrier.php"
 
 PARAMS = {
     "saison": "2026/2027",
-    "codent": "LIIDF",     # code de la ligue 
-    "poule": "2MC",
+    "codent": "PTIDF95",
+    "poule": "ARO",
     "calend": "COMPLET",
-    "equipe": "1"
-
+    "equipe": "5",
 }
 
 MATCHES_FILE = Path("matches.json")
+ICS_FILE = Path("calendrier.ics")
 
-def scrap_matches (params = PARAMS):
+VTIMEZONE = [
+    "BEGIN:VTIMEZONE",
+    "TZID:Europe/Paris",
+    "BEGIN:DAYLIGHT",
+    "TZOFFSETFROM:+0100",
+    "TZOFFSETTO:+0200",
+    "TZNAME:CEST",
+    "DTSTART:19700329T020000",
+    "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU",
+    "END:DAYLIGHT",
+    "BEGIN:STANDARD",
+    "TZOFFSETFROM:+0200",
+    "TZOFFSETTO:+0100",
+    "TZNAME:CET",
+    "DTSTART:19701025T030000",
+    "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU",
+    "END:STANDARD",
+    "END:VTIMEZONE",
+]
 
+
+def scrap_matches(params=PARAMS):
     resp = requests.get(BASE_URL, params=params, timeout=15)
     resp.encoding = "iso-8859-1"
-
 
     soup = BeautifulSoup(resp.text, "html.parser")
     matches = []
@@ -60,8 +79,53 @@ def scrap_matches (params = PARAMS):
 
 
 def save_cache(matches: list[dict], path: Path = MATCHES_FILE) -> None:
-    """Sauvegarde les matchs dans un fichier JSON (à lire depuis ton site web)."""
     path.write_text(json.dumps(matches, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def ics_escape(text: str) -> str:
+    return (
+        text.replace("\\", "\\\\")
+        .replace(";", "\\;")
+        .replace(",", "\\,")
+        .replace("\n", " ")
+    )
+
+
+def save_ics(matches: list[dict], path: Path = ICS_FILE) -> None:
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Volley FFVB//FR",
+        "CALSCALE:GREGORIAN",
+        "X-WR-CALNAME:Volley",
+        "X-WR-TIMEZONE:Europe/Paris",
+        "REFRESH-INTERVAL;VALUE=DURATION:PT6H",
+        "X-PUBLISHED-TTL:PT6H",
+    ]
+    lines += VTIMEZONE
+
+    for m in matches:
+        heure = m["heure"].replace("H", ":").replace("h", ":")
+        try:
+            debut = datetime.datetime.strptime(f"{m['date']} {heure}", "%Y-%m-%d %H:%M")
+        except ValueError:
+            continue  # heure absente ou illisible, on ignore le match
+        fin = debut + datetime.timedelta(hours=2)
+
+        lines += [
+            "BEGIN:VEVENT",
+            f"UID:{m['code']}@ffvb",
+            # DTSTAMP fixe : évite un commit quotidien inutile
+            "DTSTAMP:20260101T000000Z",
+            f"DTSTART;TZID=Europe/Paris:{debut:%Y%m%dT%H%M%S}",
+            f"DTEND;TZID=Europe/Paris:{fin:%Y%m%dT%H%M%S}",
+            f"SUMMARY:{ics_escape(m['domicile'] + ' - ' + m['exterieur'])}",
+            f"LOCATION:{ics_escape(m['salle'])}",
+            "END:VEVENT",
+        ]
+
+    lines.append("END:VCALENDAR")
+    path.write_text("\r\n".join(lines) + "\r\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
@@ -69,14 +133,5 @@ if __name__ == "__main__":
     print(f"{len(matches)} matchs trouvés pour la saison {PARAMS['saison']}.\n")
 
     save_cache(matches)
-    print(f"Calendrier sauvegardé dans {MATCHES_FILE.resolve()}\n")
-
-""" nm = next_match(matches)
-    if nm:
-        print("Prochain match :")
-        print(f"  {nm['domicile']} vs {nm['exterieur']}")
-        print(f"  le {nm['date']} à {nm['heure']}")
-        print(f"  Salle : {nm['salle']}")
-    else:
-        print("Aucun match à venir dans le calendrier récupéré.")
-"""
+    save_ics(matches)
+    print(f"Calendrier sauvegardé dans {ICS_FILE.resolve()}")
