@@ -9,9 +9,9 @@ BASE_URL = "https://www.ffvbbeach.org/ffvbapp/resu/vbspo_calendrier.php"
 
 EQUIPES = [
     {
-        "nom": "Volley Équipe 5",
-        "ics": "calendrier.ics",
-        "json": "matches.json",
+        "nom": "Volley Équipe SM-DEP",
+        "ics": "calendrier_SM-DEP.ics",
+        "json": "matches_SM-DEP.json",
         "params": {
             "saison": "2026/2027",
             "codent": "PTIDF95",
@@ -21,14 +21,15 @@ EQUIPES = [
         },
     },
     {
-        "nom": "Volley ARG",
-        "ics": "calendrier-arg.ics",
-        "json": "matches-arg.json",
+        "nom": "Volley Équipe SF-TAV",
+        "ics": "calendrier_SF-TAV.ics",
+        "json": "matches_SF-TAV.json",
         "params": {
             "saison": "2026/2027",
             "codent": "PTIDF95",
             "poule": "ARG",
             "calend": "COMPLET",
+            "equipe": "2",
         },
     },
 ]
