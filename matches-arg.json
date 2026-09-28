@@ -1,0 +1,450 @@
+[
+  {
+    "code": "ARGA001",
+    "date": "2026-10-04",
+    "heure": "14:00",
+    "domicile": "ARGENTEUIL VOLLEY BALL 95",
+    "exterieur": "I.A.F.V.O.",
+    "salle": "LES CHÂTAIGNIERS (NOUV SALLE)"
+  },
+  {
+    "code": "ARGA002",
+    "date": "2026-10-04",
+    "heure": "16:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "ARGA003",
+    "date": "2026-10-03",
+    "heure": "20:00",
+    "domicile": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "exterieur": "xxxxx",
+    "salle": ""
+  },
+  {
+    "code": "ARGA004",
+    "date": "2026-10-04",
+    "heure": "16:30",
+    "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "exterieur": "MONTIGNY VOLLEY 95",
+    "salle": "GYMNASE JEAN BOUIN"
+  },
+  {
+    "code": "ARGA005",
+    "date": "2026-10-10",
+    "heure": "20:00",
+    "domicile": "I.A.F.V.O.",
+    "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "salle": "CENTRE SPORTIF AMÉLIE MAURESMO"
+  },
+  {
+    "code": "ARGA006",
+    "date": "2026-10-11",
+    "heure": "17:00",
+    "domicile": "MONTIGNY VOLLEY 95",
+    "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "salle": "COSEC/DE VINCI - MONTIGNY"
+  },
+  {
+    "code": "ARGA007",
+    "date": "2026-10-11",
+    "heure": "14:00",
+    "domicile": "xxxxx",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": ""
+  },
+  {
+    "code": "ARGA008",
+    "date": "2026-10-10",
+    "heure": "20:00",
+    "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "exterieur": "ARGENTEUIL VOLLEY BALL 95",
+    "salle": "GYMNASE PATRICK RENAUD"
+  },
+  {
+    "code": "ARGA009",
+    "date": "2026-11-08",
+    "heure": "16:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "MONTIGNY VOLLEY 95",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "ARGA010",
+    "date": "2026-11-07",
+    "heure": "20:00",
+    "domicile": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "exterieur": "I.A.F.V.O.",
+    "salle": "BEAUREGARDS - HERBLAY"
+  },
+  {
+    "code": "ARGA011",
+    "date": "2026-11-08",
+    "heure": "16:30",
+    "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "exterieur": "ARGENTEUIL VOLLEY BALL 95",
+    "salle": "GYMNASE JEAN BOUIN"
+  },
+  {
+    "code": "ARGA012",
+    "date": "2026-11-08",
+    "heure": "14:00",
+    "domicile": "xxxxx",
+    "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "salle": ""
+  },
+  {
+    "code": "ARGA013",
+    "date": "2026-11-22",
+    "heure": "14:00",
+    "domicile": "ARGENTEUIL VOLLEY BALL 95",
+    "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "salle": "LES CHÂTAIGNIERS (NOUV SALLE)"
+  },
+  {
+    "code": "ARGA014",
+    "date": "2026-11-22",
+    "heure": "16:30",
+    "domicile": "I.A.F.V.O.",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "CENTRE SPORTIF AMÉLIE MAURESMO"
+  },
+  {
+    "code": "ARGA015",
+    "date": "2026-11-22",
+    "heure": "17:00",
+    "domicile": "MONTIGNY VOLLEY 95",
+    "exterieur": "xxxxx",
+    "salle": ""
+  },
+  {
+    "code": "ARGA016",
+    "date": "2026-11-22",
+    "heure": "16:30",
+    "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "salle": "GYMNASE JEAN BOUIN"
+  },
+  {
+    "code": "ARGA017",
+    "date": "2026-11-29",
+    "heure": "16:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "ARGENTEUIL VOLLEY BALL 95",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "ARGA018",
+    "date": "2026-11-28",
+    "heure": "20:00",
+    "domicile": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "salle": "BEAUREGARDS - HERBLAY"
+  },
+  {
+    "code": "ARGA019",
+    "date": "2026-11-29",
+    "heure": "17:00",
+    "domicile": "MONTIGNY VOLLEY 95",
+    "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "salle": "COSEC/DE VINCI - MONTIGNY"
+  },
+  {
+    "code": "ARGA020",
+    "date": "2026-11-29",
+    "heure": "14:00",
+    "domicile": "xxxxx",
+    "exterieur": "I.A.F.V.O.",
+    "salle": ""
+  },
+  {
+    "code": "ARGA021",
+    "date": "2026-12-06",
+    "heure": "14:00",
+    "domicile": "ARGENTEUIL VOLLEY BALL 95",
+    "exterieur": "xxxxx",
+    "salle": ""
+  },
+  {
+    "code": "ARGA022",
+    "date": "2026-12-06",
+    "heure": "16:30",
+    "domicile": "I.A.F.V.O.",
+    "exterieur": "MONTIGNY VOLLEY 95",
+    "salle": "CENTRE SPORTIF AMÉLIE MAURESMO"
+  },
+  {
+    "code": "ARGA023",
+    "date": "2026-12-05",
+    "heure": "20:00",
+    "domicile": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "salle": "BEAUREGARDS - HERBLAY"
+  },
+  {
+    "code": "ARGA024",
+    "date": "2026-12-06",
+    "heure": "16:30",
+    "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE JEAN BOUIN"
+  },
+  {
+    "code": "ARGA025",
+    "date": "2027-01-10",
+    "heure": "16:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "ARGA026",
+    "date": "2027-01-10",
+    "heure": "17:00",
+    "domicile": "MONTIGNY VOLLEY 95",
+    "exterieur": "ARGENTEUIL VOLLEY BALL 95",
+    "salle": "COSEC/DE VINCI - MONTIGNY"
+  },
+  {
+    "code": "ARGA027",
+    "date": "2027-01-10",
+    "heure": "14:00",
+    "domicile": "xxxxx",
+    "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "salle": ""
+  },
+  {
+    "code": "ARGA028",
+    "date": "2027-01-09",
+    "heure": "20:00",
+    "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "exterieur": "I.A.F.V.O.",
+    "salle": "GYMNASE PATRICK RENAUD"
+  },
+  {
+    "code": "ARGR029",
+    "date": "2027-01-17",
+    "heure": "14:00",
+    "domicile": "I.A.F.V.O.",
+    "exterieur": "ARGENTEUIL VOLLEY BALL 95",
+    "salle": "CENTRE SPORTIF AMÉLIE MAURESMO"
+  },
+  {
+    "code": "ARGR030",
+    "date": "2027-01-16",
+    "heure": "20:00",
+    "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE PATRICK RENAUD"
+  },
+  {
+    "code": "ARGR031",
+    "date": "2027-01-16",
+    "heure": "14:00",
+    "domicile": "xxxxx",
+    "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "salle": ""
+  },
+  {
+    "code": "ARGR032",
+    "date": "2027-01-17",
+    "heure": "17:00",
+    "domicile": "MONTIGNY VOLLEY 95",
+    "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "salle": "COSEC/DE VINCI - MONTIGNY"
+  },
+  {
+    "code": "ARGR033",
+    "date": "2027-01-31",
+    "heure": "16:30",
+    "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "exterieur": "I.A.F.V.O.",
+    "salle": "GYMNASE JEAN BOUIN"
+  },
+  {
+    "code": "ARGR034",
+    "date": "2027-01-30",
+    "heure": "20:00",
+    "domicile": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "exterieur": "MONTIGNY VOLLEY 95",
+    "salle": "BEAUREGARDS - HERBLAY"
+  },
+  {
+    "code": "ARGR035",
+    "date": "2027-01-31",
+    "heure": "16:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "xxxxx",
+    "salle": ""
+  },
+  {
+    "code": "ARGR036",
+    "date": "2027-01-31",
+    "heure": "14:00",
+    "domicile": "ARGENTEUIL VOLLEY BALL 95",
+    "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "salle": "LES CHÂTAIGNIERS (NOUV SALLE)"
+  },
+  {
+    "code": "ARGR037",
+    "date": "2027-02-21",
+    "heure": "17:00",
+    "domicile": "MONTIGNY VOLLEY 95",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "COSEC/DE VINCI - MONTIGNY"
+  },
+  {
+    "code": "ARGR038",
+    "date": "2027-02-21",
+    "heure": "16:30",
+    "domicile": "I.A.F.V.O.",
+    "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "salle": "CENTRE SPORTIF AMÉLIE MAURESMO"
+  },
+  {
+    "code": "ARGR039",
+    "date": "2027-02-21",
+    "heure": "14:00",
+    "domicile": "ARGENTEUIL VOLLEY BALL 95",
+    "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "salle": "LES CHÂTAIGNIERS (NOUV SALLE)"
+  },
+  {
+    "code": "ARGR040",
+    "date": "2027-02-20",
+    "heure": "20:00",
+    "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "exterieur": "xxxxx",
+    "salle": ""
+  },
+  {
+    "code": "ARGR041",
+    "date": "2027-02-27",
+    "heure": "20:00",
+    "domicile": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "exterieur": "ARGENTEUIL VOLLEY BALL 95",
+    "salle": "BEAUREGARDS - HERBLAY"
+  },
+  {
+    "code": "ARGR042",
+    "date": "2027-02-28",
+    "heure": "16:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "I.A.F.V.O.",
+    "salle": "GYMNASE DE L'EUROPE"
+  },
+  {
+    "code": "ARGR043",
+    "date": "2027-02-28",
+    "heure": "14:00",
+    "domicile": "xxxxx",
+    "exterieur": "MONTIGNY VOLLEY 95",
+    "salle": ""
+  },
+  {
+    "code": "ARGR044",
+    "date": "2027-02-27",
+    "heure": "20:00",
+    "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "salle": "GYMNASE PATRICK RENAUD"
+  },
+  {
+    "code": "ARGR045",
+    "date": "2027-03-07",
+    "heure": "14:00",
+    "domicile": "ARGENTEUIL VOLLEY BALL 95",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "LES CHÂTAIGNIERS (NOUV SALLE)"
+  },
+  {
+    "code": "ARGR046",
+    "date": "2027-03-07",
+    "heure": "16:30",
+    "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "salle": "GYMNASE JEAN BOUIN"
+  },
+  {
+    "code": "ARGR047",
+    "date": "2027-03-06",
+    "heure": "20:00",
+    "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "exterieur": "MONTIGNY VOLLEY 95",
+    "salle": "GYMNASE PATRICK RENAUD"
+  },
+  {
+    "code": "ARGR048",
+    "date": "2027-03-07",
+    "heure": "16:30",
+    "domicile": "I.A.F.V.O.",
+    "exterieur": "xxxxx",
+    "salle": ""
+  },
+  {
+    "code": "ARGR049",
+    "date": "2027-03-21",
+    "heure": "14:00",
+    "domicile": "xxxxx",
+    "exterieur": "ARGENTEUIL VOLLEY BALL 95",
+    "salle": ""
+  },
+  {
+    "code": "ARGR050",
+    "date": "2027-03-21",
+    "heure": "17:00",
+    "domicile": "MONTIGNY VOLLEY 95",
+    "exterieur": "I.A.F.V.O.",
+    "salle": "COSEC/DE VINCI - MONTIGNY"
+  },
+  {
+    "code": "ARGR051",
+    "date": "2027-03-20",
+    "heure": "20:00",
+    "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "salle": "GYMNASE PATRICK RENAUD"
+  },
+  {
+    "code": "ARGR052",
+    "date": "2027-03-21",
+    "heure": "16:30",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "salle": "GYMNASE DU BEL AIR"
+  },
+  {
+    "code": "ARGR053",
+    "date": "2027-04-03",
+    "heure": "20:00",
+    "domicile": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "BEAUREGARDS - HERBLAY"
+  },
+  {
+    "code": "ARGR054",
+    "date": "2027-04-04",
+    "heure": "14:00",
+    "domicile": "ARGENTEUIL VOLLEY BALL 95",
+    "exterieur": "MONTIGNY VOLLEY 95",
+    "salle": "LES CHÂTAIGNIERS (NOUV SALLE)"
+  },
+  {
+    "code": "ARGR055",
+    "date": "2027-04-04",
+    "heure": "16:30",
+    "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "exterieur": "xxxxx",
+    "salle": ""
+  },
+  {
+    "code": "ARGR056",
+    "date": "2027-04-03",
+    "heure": "20:00",
+    "domicile": "I.A.F.V.O.",
+    "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "salle": "CENTRE SPORTIF AMÉLIE MAURESMO"
+  }
+]
