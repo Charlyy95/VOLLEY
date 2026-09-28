@@ -37,7 +37,9 @@ jobs:
           git diff --staged --quiet || git commit -m "Mise à jour automatique du calendrier"
           git push
 
-      - name: Garder le workflow actif
+       - name: Garder le workflow actif
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow enable "${{ github.workflow }}"
+        run: |
+          ID=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }} --jq .workflow_id)
+          gh api -X PUT repos/${{ github.repository }}/actions/workflows/$ID/enable
