@@ -1,0 +1,114 @@
+[
+  {
+    "code": "AROA003",
+    "date": "2026-10-04",
+    "heure": "15:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "MACCABI DE SARCELLES",
+    "salle": "GYMNASE DU BEL AIR"
+  },
+  {
+    "code": "AROA006",
+    "date": "2026-10-11",
+    "heure": "15:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "AS VOLLEYEURS DU PLESSIS BOUCHARD",
+    "salle": "GYMNASE DU BEL AIR"
+  },
+  {
+    "code": "AROA010",
+    "date": "2026-11-08",
+    "heure": "15:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "salle": "GYMNASE DU BEL AIR"
+  },
+  {
+    "code": "AROA013",
+    "date": "2026-11-22",
+    "heure": "14:00",
+    "domicile": "JEUNESSE SANNOIS ST-GRATIEN 1",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "SIVOM- HALL DES SPORTS HIDALGO"
+  },
+  {
+    "code": "AROA018",
+    "date": "2026-11-29",
+    "heure": "15:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "CSM EAUBONNE",
+    "salle": "GYMNASE DU BEL AIR"
+  },
+  {
+    "code": "AROA023",
+    "date": "2026-12-06",
+    "heure": "15:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "V.B. CLUB ERMONT",
+    "salle": "GYMNASE DU BEL AIR"
+  },
+  {
+    "code": "AROA025",
+    "date": "2027-01-09",
+    "heure": "20:00",
+    "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU 2",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE LADOUMEGUE"
+  },
+  {
+    "code": "AROR031",
+    "date": "2027-01-17",
+    "heure": "14:00",
+    "domicile": "MACCABI DE SARCELLES",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE PAULINE KERGOMARE"
+  },
+  {
+    "code": "AROR034",
+    "date": "2027-01-31",
+    "heure": "14:00",
+    "domicile": "AS VOLLEYEURS DU PLESSIS BOUCHARD",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "ANDRÉ GUILLAUMIE"
+  },
+  {
+    "code": "AROR038",
+    "date": "2027-02-20",
+    "heure": "20:00",
+    "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE PATRICK RENAUD"
+  },
+  {
+    "code": "AROR041",
+    "date": "2027-02-28",
+    "heure": "15:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "JEUNESSE SANNOIS ST-GRATIEN 1",
+    "salle": "GYMNASE DU BEL AIR"
+  },
+  {
+    "code": "AROR046",
+    "date": "2027-03-06",
+    "heure": "19:30",
+    "domicile": "CSM EAUBONNE",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "BOIS JACQUES - EAUBONNE"
+  },
+  {
+    "code": "AROR051",
+    "date": "2027-03-21",
+    "heure": "16:00",
+    "domicile": "V.B. CLUB ERMONT",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "SAINT EXUPERY - ERMONT"
+  },
+  {
+    "code": "AROR053",
+    "date": "2027-04-04",
+    "heure": "15:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU 2",
+    "salle": "GYMNASE DU BEL AIR"
+  }
+]
