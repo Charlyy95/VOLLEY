@@ -119,7 +119,7 @@ def save_ics(matches: list[dict], path: Path = ICS_FILE) -> None:
             "DTSTAMP:20260101T000000Z",
             f"DTSTART;TZID=Europe/Paris:{debut:%Y%m%dT%H%M%S}",
             f"DTEND;TZID=Europe/Paris:{fin:%Y%m%dT%H%M%S}",
-            f"SUMMARY:{ics_escape(m['domicile'] + ' - ' + m['exterieur'])}",
+            f"SUMMARY:Match 🏐\\n{ics_escape(m['domicile'] + ' - ' + m['exterieur'])}",
             f"LOCATION:{ics_escape(m['salle'])}",
             "END:VEVENT",
         ]
