@@ -7,16 +7,31 @@ from bs4 import BeautifulSoup
 
 BASE_URL = "https://www.ffvbbeach.org/ffvbapp/resu/vbspo_calendrier.php"
 
-PARAMS = {
-    "saison": "2026/2027",
-    "codent": "PTIDF95",
-    "poule": "ARO",
-    "calend": "COMPLET",
-    "equipe": "5",
-}
-
-MATCHES_FILE = Path("matches.json")
-ICS_FILE = Path("calendrier.ics")
+EQUIPES = [
+    {
+        "nom": "Volley Équipe 5",
+        "ics": "calendrier.ics",
+        "json": "matches.json",
+        "params": {
+            "saison": "2026/2027",
+            "codent": "PTIDF95",
+            "poule": "ARO",
+            "calend": "COMPLET",
+            "equipe": "5",
+        },
+    },
+    {
+        "nom": "Volley ARG",
+        "ics": "calendrier-arg.ics",
+        "json": "matches-arg.json",
+        "params": {
+            "saison": "2026/2027",
+            "codent": "PTIDF95",
+            "poule": "ARG",
+            "calend": "COMPLET",
+        },
+    },
+]
 
 VTIMEZONE = [
     "BEGIN:VTIMEZONE",
@@ -39,7 +54,7 @@ VTIMEZONE = [
 ]
 
 
-def scrap_matches(params=PARAMS):
+def scrap_matches(params):
     resp = requests.get(BASE_URL, params=params, timeout=15)
     resp.encoding = "iso-8859-1"
 
@@ -78,7 +93,7 @@ def scrap_matches(params=PARAMS):
     return matches
 
 
-def save_cache(matches: list[dict], path: Path = MATCHES_FILE) -> None:
+def save_cache(matches: list[dict], path: Path) -> None:
     path.write_text(json.dumps(matches, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
@@ -91,13 +106,13 @@ def ics_escape(text: str) -> str:
     )
 
 
-def save_ics(matches: list[dict], path: Path = ICS_FILE) -> None:
+def save_ics(matches: list[dict], path: Path, nom: str = "Volley") -> None:
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
         "PRODID:-//Volley FFVB//FR",
         "CALSCALE:GREGORIAN",
-        "X-WR-CALNAME:Volley",
+        f"X-WR-CALNAME:{ics_escape(nom)}",
         "X-WR-TIMEZONE:Europe/Paris",
         "REFRESH-INTERVAL;VALUE=DURATION:PT6H",
         "X-PUBLISHED-TTL:PT6H",
@@ -112,6 +127,16 @@ def save_ics(matches: list[dict], path: Path = ICS_FILE) -> None:
             continue  # heure absente ou illisible, on ignore le match
         fin = debut + datetime.timedelta(hours=2)
 
+        description = "\\n".join(
+            ics_escape(ligne)
+            for ligne in [
+                f"{m['domicile']} vs {m['exterieur']}",
+                f"Date : {debut:%d/%m/%Y} à {debut:%H:%M}",
+                f"Salle : {m['salle']}",
+                f"Match n° {m['code']}",
+            ]
+        )
+
         lines += [
             "BEGIN:VEVENT",
             f"UID:{m['code']}@ffvb",
@@ -121,6 +146,7 @@ def save_ics(matches: list[dict], path: Path = ICS_FILE) -> None:
             f"DTEND;TZID=Europe/Paris:{fin:%Y%m%dT%H%M%S}",
             f"SUMMARY:Match 🏐\\n{ics_escape(m['domicile'] + ' - ' + m['exterieur'])}",
             f"LOCATION:{ics_escape(m['salle'])}",
+            f"DESCRIPTION:{description}",
             "END:VEVENT",
         ]
 
@@ -129,9 +155,8 @@ def save_ics(matches: list[dict], path: Path = ICS_FILE) -> None:
 
 
 if __name__ == "__main__":
-    matches = scrap_matches()
-    print(f"{len(matches)} matchs trouvés pour la saison {PARAMS['saison']}.\n")
-
-    save_cache(matches)
-    save_ics(matches)
-    print(f"Calendrier sauvegardé dans {ICS_FILE.resolve()}")
+    for eq in EQUIPES:
+        matches = scrap_matches(eq["params"])
+        print(f"{eq['nom']} : {len(matches)} matchs trouvés.")
+        save_cache(matches, Path(eq["json"]))
+        save_ics(matches, Path(eq["ics"]), eq["nom"])
