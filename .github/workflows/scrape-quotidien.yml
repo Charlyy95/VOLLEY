@@ -2,7 +2,6 @@ name: Mise à jour du calendrier
 
 on:
   schedule:
-    # Tous les jours à 5h00 UTC (= 7h00 à Paris en été, 6h00 en hiver)
     - cron: "0 5 * * *"
   workflow_dispatch:
 
@@ -37,7 +36,7 @@ jobs:
           git diff --staged --quiet || git commit -m "Mise à jour automatique du calendrier"
           git push
 
-       - name: Garder le workflow actif
+      - name: Garder le workflow actif
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
