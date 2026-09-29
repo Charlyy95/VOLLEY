@@ -31,18 +31,6 @@ EQUIPES = [
             "calend": "COMPLET",
             "equipe": "2",
         },
-    },
-    {
-        "nom": "Volley Équipe SF-DEP",
-        "ics": "calendrier_SF-DEP.ics",
-        "json": "matches_SF-DEP.json",
-        "params": {
-            "saison": "2026/2027",
-            "codent": "PTIDF95",
-            "poule": "ARG",
-            "calend": "COMPLET",
-            "equipe": "2",
-        },
     }
 ]
 
