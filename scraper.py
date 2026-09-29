@@ -172,8 +172,15 @@ def save_ics(matches: list[dict], path: Path, nom: str = "Volley") -> None:
 
 
 if __name__ == "__main__":
+    erreur = False
     for eq in EQUIPES:
         matches = scrap_matches(eq["params"])
         print(f"{eq['nom']} : {len(matches)} matchs trouvés.")
+        if not matches:
+            print(f"{eq['nom']} : 0 match, fichiers conservés.")
+            erreur = True
+            continue
         save_cache(matches, Path(eq["json"]))
         save_ics(matches, Path(eq["ics"]), eq["nom"])
+    if erreur:
+        raise SystemExit(1)
