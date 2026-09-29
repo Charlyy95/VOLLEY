@@ -32,6 +32,18 @@ EQUIPES = [
             "equipe": "2",
         },
     },
+    {
+        "nom": "Volley Équipe SF-DEP",
+        "ics": "calendrier_SF-DEP.ics",
+        "json": "matches_SF-DEP.json",
+        "params": {
+            "saison": "2026/2027",
+            "codent": "PTIDF95",
+            "poule": "ARG",
+            "calend": "COMPLET",
+            "equipe": "2",
+        },
+    }
 ]
 
 VTIMEZONE = [
@@ -68,12 +80,15 @@ def scrap_matches(params):
         if len(cells) < 8:
             continue  # ligne incomplète, on ignore
 
-        code = cells[0].get_text(strip=True)
+                code = cells[0].get_text(strip=True)
         date_str = cells[1].get_text(strip=True)
         heure = cells[2].get_text(strip=True)
         domicile = cells[3].get_text(strip=True)
         exterieur = cells[5].get_text(strip=True)
         salle = cells[7].get_text(strip=True)
+
+        if exterieur == "" or exterieur.lower() == "xxxxx":
+            continue  # journée d'exemption, pas un vrai match
 
         try:
             date = datetime.datetime.strptime(date_str, "%d/%m/%y")
