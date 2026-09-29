@@ -88,7 +88,7 @@ def scrap_matches(params):
         exterieur = cells[5].get_text(strip=True)
         salle = cells[7].get_text(strip=True)
 
-        if exterieur == "" or exterieur.lower() == "xxxxx":
+        if "xxxxx" in (domicile.lower(), exterieur.lower()) or "" in (domicile, exterieur):
             continue  # journée d'exemption, pas un vrai match
 
         try:
