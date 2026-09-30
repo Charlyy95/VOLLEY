@@ -2,10 +2,10 @@
   {
     "code": "ARGA004",
     "date": "2026-10-04",
-    "heure": "16:30",
+    "heure": "14:00",
     "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
     "exterieur": "MONTIGNY VOLLEY 95",
-    "salle": "GYMNASE JEAN BOUIN"
+    "salle": "GYMNASE JULES LADOUMÈGUE"
   },
   {
     "code": "ARGA005",
@@ -42,7 +42,7 @@
   {
     "code": "ARGA024",
     "date": "2026-12-06",
-    "heure": "16:30",
+    "heure": "16:00",
     "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
     "exterieur": "SOCIETE VB FRANCONVILLE",
     "salle": "GYMNASE JEAN BOUIN"
@@ -82,7 +82,7 @@
   {
     "code": "ARGR046",
     "date": "2027-03-07",
-    "heure": "16:30",
+    "heure": "16:00",
     "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
     "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
     "salle": "GYMNASE JEAN BOUIN"
