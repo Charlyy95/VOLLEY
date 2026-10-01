@@ -69,7 +69,12 @@ VTIMEZONE = [
 
 
 def scrap_matches(params):
-    resp = requests.get(BASE_URL, params=params, timeout=15)
+    try:
+        resp = requests.get(BASE_URL, params=params, timeout=15)
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Erreur réseau : {e}")
+        return []
     resp.encoding = "iso-8859-1"
 
     soup = BeautifulSoup(resp.text, "html.parser")
