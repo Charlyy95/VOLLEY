@@ -5,7 +5,8 @@
     "heure": "16:30",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
-    "salle": "0"
+    "salle": "0",
+    "score": "3-0"
   },
   {
     "code": "ARGA009",
@@ -13,7 +14,8 @@
     "heure": "16:30",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "MONTIGNY VOLLEY 95",
-    "salle": "GYMNASE DE L'EUROPE"
+    "salle": "GYMNASE DE L'EUROPE",
+    "score": ""
   },
   {
     "code": "ARGA014",
@@ -21,7 +23,8 @@
     "heure": "16:30",
     "domicile": "I.A.F.V.O.",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "CENTRE SPORTIF AMÉLIE MAURESMO"
+    "salle": "CENTRE SPORTIF AMÉLIE MAURESMO",
+    "score": ""
   },
   {
     "code": "ARGA017",
@@ -29,7 +32,8 @@
     "heure": "16:30",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "ARGENTEUIL VOLLEY BALL 95",
-    "salle": "GYMNASE DE L'EUROPE"
+    "salle": "GYMNASE DE L'EUROPE",
+    "score": ""
   },
   {
     "code": "ARGA024",
@@ -37,7 +41,8 @@
     "heure": "16:00",
     "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "GYMNASE JEAN BOUIN"
+    "salle": "GYMNASE JEAN BOUIN",
+    "score": ""
   },
   {
     "code": "ARGA025",
@@ -45,7 +50,8 @@
     "heure": "16:30",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
-    "salle": "GYMNASE DE L'EUROPE"
+    "salle": "GYMNASE DE L'EUROPE",
+    "score": ""
   },
   {
     "code": "ARGR030",
@@ -53,7 +59,8 @@
     "heure": "20:00",
     "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "GYMNASE PATRICK RENAUD"
+    "salle": "GYMNASE PATRICK RENAUD",
+    "score": ""
   },
   {
     "code": "ARGR037",
@@ -61,7 +68,8 @@
     "heure": "11:00",
     "domicile": "MONTIGNY VOLLEY 95",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "COSEC/DE VINCI - MONTIGNY"
+    "salle": "COSEC/DE VINCI - MONTIGNY",
+    "score": ""
   },
   {
     "code": "ARGR042",
@@ -69,7 +77,8 @@
     "heure": "16:30",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "I.A.F.V.O.",
-    "salle": "GYMNASE DE L'EUROPE"
+    "salle": "GYMNASE DE L'EUROPE",
+    "score": ""
   },
   {
     "code": "ARGR045",
@@ -77,7 +86,8 @@
     "heure": "14:00",
     "domicile": "ARGENTEUIL VOLLEY BALL 95",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "LES CHÂTAIGNIERS (NOUV SALLE)"
+    "salle": "LES CHÂTAIGNIERS (NOUV SALLE)",
+    "score": ""
   },
   {
     "code": "ARGR052",
@@ -85,7 +95,8 @@
     "heure": "16:30",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
-    "salle": "GYMNASE DU BEL AIR"
+    "salle": "GYMNASE DU BEL AIR",
+    "score": ""
   },
   {
     "code": "ARGR053",
@@ -93,6 +104,7 @@
     "heure": "20:00",
     "domicile": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "BEAUREGARDS - HERBLAY"
+    "salle": "BEAUREGARDS - HERBLAY",
+    "score": ""
   }
 ]

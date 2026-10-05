@@ -5,7 +5,8 @@
     "heure": "15:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "MACCABI DE SARCELLES",
-    "salle": "0"
+    "salle": "0",
+    "score": "3-0"
   },
   {
     "code": "AROA006",
@@ -13,7 +14,8 @@
     "heure": "15:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "AS VOLLEYEURS DU PLESSIS BOUCHARD",
-    "salle": "GYMNASE DU BEL AIR"
+    "salle": "GYMNASE DU BEL AIR",
+    "score": ""
   },
   {
     "code": "AROA010",
@@ -21,7 +23,8 @@
     "heure": "15:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
-    "salle": "GYMNASE DU BEL AIR"
+    "salle": "GYMNASE DU BEL AIR",
+    "score": ""
   },
   {
     "code": "AROA013",
@@ -29,7 +32,8 @@
     "heure": "14:00",
     "domicile": "JEUNESSE SANNOIS ST-GRATIEN 1",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "SIVOM- HALL DES SPORTS HIDALGO"
+    "salle": "SIVOM- HALL DES SPORTS HIDALGO",
+    "score": ""
   },
   {
     "code": "AROA018",
@@ -37,7 +41,8 @@
     "heure": "15:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "CSM EAUBONNE",
-    "salle": "GYMNASE DU BEL AIR"
+    "salle": "GYMNASE DU BEL AIR",
+    "score": ""
   },
   {
     "code": "AROA023",
@@ -45,7 +50,8 @@
     "heure": "15:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "V.B. CLUB ERMONT",
-    "salle": "GYMNASE DU BEL AIR"
+    "salle": "GYMNASE DU BEL AIR",
+    "score": ""
   },
   {
     "code": "AROA025",
@@ -53,7 +59,8 @@
     "heure": "19:00",
     "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU 2",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "GYMNASE JEAN BOUIN"
+    "salle": "GYMNASE JEAN BOUIN",
+    "score": ""
   },
   {
     "code": "AROR031",
@@ -61,7 +68,8 @@
     "heure": "12:30",
     "domicile": "MACCABI DE SARCELLES",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "GYMNASE PAULINE KERGOMARE"
+    "salle": "GYMNASE PAULINE KERGOMARE",
+    "score": ""
   },
   {
     "code": "AROR034",
@@ -69,7 +77,8 @@
     "heure": "14:00",
     "domicile": "AS VOLLEYEURS DU PLESSIS BOUCHARD",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "ANDRÉ GUILLAUMIE"
+    "salle": "ANDRÉ GUILLAUMIE",
+    "score": ""
   },
   {
     "code": "AROR038",
@@ -77,7 +86,8 @@
     "heure": "20:00",
     "domicile": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "GYMNASE PATRICK RENAUD"
+    "salle": "GYMNASE PATRICK RENAUD",
+    "score": ""
   },
   {
     "code": "AROR041",
@@ -85,7 +95,8 @@
     "heure": "15:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "JEUNESSE SANNOIS ST-GRATIEN 1",
-    "salle": "GYMNASE DU BEL AIR"
+    "salle": "GYMNASE DU BEL AIR",
+    "score": ""
   },
   {
     "code": "AROR046",
@@ -93,7 +104,8 @@
     "heure": "19:30",
     "domicile": "CSM EAUBONNE",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "BOIS JACQUES - EAUBONNE"
+    "salle": "BOIS JACQUES - EAUBONNE",
+    "score": ""
   },
   {
     "code": "AROR051",
@@ -101,7 +113,8 @@
     "heure": "16:00",
     "domicile": "V.B. CLUB ERMONT",
     "exterieur": "SOCIETE VB FRANCONVILLE",
-    "salle": "SAINT EXUPERY - ERMONT"
+    "salle": "SAINT EXUPERY - ERMONT",
+    "score": ""
   },
   {
     "code": "AROR053",
@@ -109,6 +122,7 @@
     "heure": "15:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "AS VOLLEY-BALL TAVERNY SAINT-LEU 2",
-    "salle": "GYMNASE DU BEL AIR"
+    "salle": "GYMNASE DU BEL AIR",
+    "score": ""
   }
 ]
