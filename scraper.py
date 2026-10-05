@@ -43,8 +43,7 @@ EQUIPES = [
             "calend": "COMPLET",
             "equipe": "7",
         },
-    }
-    
+    },
 ]
 
 VTIMEZONE = [
@@ -83,7 +82,6 @@ def scrap_matches(params):
     # Chaque ligne de match a ce bgcolor précis dans le HTML du site.
     for row in soup.find_all("tr", bgcolor="#EEEEF8"):
         cells = row.find_all("td")
-        print([c.get_text(strip=True) for c in cells])    #debug
         if len(cells) < 8:
             continue  # ligne incomplète, on ignore
 
@@ -92,10 +90,19 @@ def scrap_matches(params):
         heure = cells[2].get_text(strip=True)
         domicile = cells[3].get_text(strip=True)
         exterieur = cells[5].get_text(strip=True)
-        salle = cells[7].get_text(strip=True)
+        score_dom = cells[6].get_text(strip=True)
 
         if "xxxxx" in (domicile.lower(), exterieur.lower()) or "" in (domicile, exterieur):
             continue  # journée d'exemption, pas un vrai match
+
+        if score_dom:
+            # Match déjà joué : le site affiche le score à la place de la salle.
+            score_ext = cells[7].get_text(strip=True)
+            score = f"{score_dom}-{score_ext}"
+            salle = ""
+        else:
+            score = ""
+            salle = cells[7].get_text(strip=True)
 
         try:
             date = datetime.datetime.strptime(date_str, "%d/%m/%y")
@@ -110,10 +117,30 @@ def scrap_matches(params):
                 "domicile": domicile,
                 "exterieur": exterieur,
                 "salle": salle,
+                "score": score,
             }
         )
 
     return matches
+
+
+def load_cache(path: Path) -> dict:
+    """Charge l'ancien fichier JSON (s'il existe) dans un dict indexé par code."""
+    if not path.exists():
+        return {}
+    anciens = json.loads(path.read_text(encoding="utf-8"))
+    return {m["code"]: m for m in anciens}
+
+
+def figer_si_joue(matches: list[dict], anciens: dict) -> None:
+    """Une fois un match joué, on ne garde plus que les infos déjà connues
+    (salle, heure...) : seul le score est mis à jour."""
+    for m in matches:
+        if m["score"] and m["code"] in anciens:
+            ancien = anciens[m["code"]]
+            score_nouveau = m["score"]
+            m.update(ancien)
+            m["score"] = score_nouveau
 
 
 def save_cache(matches: list[dict], path: Path) -> None:
@@ -150,15 +177,17 @@ def save_ics(matches: list[dict], path: Path, nom: str = "Volley") -> None:
             continue  # heure absente ou illisible, on ignore le match
         fin = debut + datetime.timedelta(hours=2)
 
-        description = "\\n".join(
-            ics_escape(ligne)
-            for ligne in [
-                f"{m['domicile']} vs {m['exterieur']}",
-                f"Date : {debut:%d/%m/%Y} à {debut:%H:%M}",
-                f"Salle : {m['salle']}",
-                f"Match n° {m['code']}",
-            ]
-        )
+        details = [
+            f"{m['domicile']} vs {m['exterieur']}",
+            f"Date : {debut:%d/%m/%Y} à {debut:%H:%M}",
+        ]
+        if m["score"]:
+            details.append(f"Score : {m['score']}")
+        if m["salle"]:
+            details.append(f"Salle : {m['salle']}")
+        details.append(f"Match n° {m['code']}")
+
+        description = "\\n".join(ics_escape(ligne) for ligne in details)
 
         lines += [
             "BEGIN:VEVENT",
@@ -186,6 +215,10 @@ if __name__ == "__main__":
             print(f"{eq['nom']} : 0 match, fichiers conservés.")
             erreur = True
             continue
+
+        anciens = load_cache(Path(eq["json"]))
+        figer_si_joue(matches, anciens)
+
         save_cache(matches, Path(eq["json"]))
         save_ics(matches, Path(eq["ics"]), eq["nom"])
     if erreur:
