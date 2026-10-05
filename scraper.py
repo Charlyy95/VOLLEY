@@ -83,6 +83,7 @@ def scrap_matches(params):
     # Chaque ligne de match a ce bgcolor précis dans le HTML du site.
     for row in soup.find_all("tr", bgcolor="#EEEEF8"):
         cells = row.find_all("td")
+        print([c.get_text(strip=True) for c in cells])    #debug
         if len(cells) < 8:
             continue  # ligne incomplète, on ignore
 
