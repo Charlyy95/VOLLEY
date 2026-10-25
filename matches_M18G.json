@@ -1,0 +1,56 @@
+[
+  {
+    "code": "CNI004",
+    "date": "2026-11-07",
+    "heure": "14:00",
+    "domicile": "AS VOLLEY-BALL TAVERNY SAINT-LEU",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE JEAN BOUIN",
+    "score": ""
+  },
+  {
+    "code": "CNI006",
+    "date": "2026-11-21",
+    "heure": "14:00",
+    "domicile": "CLUB MARLYSIEN DE VOLLEY-BALL",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "SALLE DES SPORTS",
+    "score": ""
+  },
+  {
+    "code": "CNI009",
+    "date": "2026-12-05",
+    "heure": "16:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "ARGENTEUIL VOLLEY BALL 95",
+    "salle": "GYMNASE DE L'EUROPE",
+    "score": ""
+  },
+  {
+    "code": "CNI013",
+    "date": "2026-01-16",
+    "heure": "16:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
+    "salle": "GYMNASE DE L'EUROPE",
+    "score": ""
+  },
+  {
+    "code": "CNI020",
+    "date": "2026-01-30",
+    "heure": "16:00",
+    "domicile": "SOCIETE VB FRANCONVILLE",
+    "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
+    "salle": "GYMNASE DE L'EUROPE",
+    "score": ""
+  },
+  {
+    "code": "CNI022",
+    "date": "2026-03-06",
+    "heure": "16:00",
+    "domicile": "MONTMORENCY VOLLEY BALL",
+    "exterieur": "SOCIETE VB FRANCONVILLE",
+    "salle": "GYMNASE DU COSOM",
+    "score": ""
+  }
+]
