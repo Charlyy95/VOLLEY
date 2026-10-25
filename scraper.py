@@ -44,6 +44,18 @@ EQUIPES = [
             "equipe": "7",
         },
     },
+    {
+        "nom": "Volley Équipe M18G",
+        "ics": "calendrier_M18G.ics",
+        "json": "matches_M18G.json",
+        "params": {
+            "saison": "2026/2027",
+            "codent": "PTIDF95",
+            "poule": "CNI",
+            "calend": "COMPLET",
+            "equipe": "5",
+        },
+    },
 ]
 
 VTIMEZONE = [
