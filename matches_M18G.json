@@ -23,12 +23,12 @@
     "heure": "16:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "ARGENTEUIL VOLLEY BALL 95",
-    "salle": "GYMNASE DE L'EUROPE",
+    "salle": "GYMNASE DU BEL AIR",
     "score": ""
   },
   {
     "code": "CNI013",
-    "date": "2026-01-16",
+    "date": "2027-01-16",
     "heure": "16:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "CLUB SPORTIF VOLLEY PUISEUX-EN-FRANCE",
@@ -37,7 +37,7 @@
   },
   {
     "code": "CNI020",
-    "date": "2026-01-30",
+    "date": "2027-01-30",
     "heure": "16:00",
     "domicile": "SOCIETE VB FRANCONVILLE",
     "exterieur": "ASSOCIATION SPORTIVE D'HERBLAY VOLLEY-BALL",
@@ -46,7 +46,7 @@
   },
   {
     "code": "CNI022",
-    "date": "2026-03-06",
+    "date": "2027-03-06",
     "heure": "16:00",
     "domicile": "MONTMORENCY VOLLEY BALL",
     "exterieur": "SOCIETE VB FRANCONVILLE",
